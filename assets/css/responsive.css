@@ -75,9 +75,13 @@
 		font-size: 16px;
 	}
 	/* Video CSS */
+	.video{
+		position: relative;
+	}
 	.video-content{
 		position: relative;
-		
+		background-color: black;
+		top: 150px;
 	}
 	/* How to apply CSS */
 	.step-boxes {
@@ -100,14 +104,17 @@
 	}
 	/* CTA CSS */
 	.cta {
-		padding: 30px 10px;
+		padding: 30px 10px !important;
 		border-radius: 0px;
 	}
 	.cta-content {
-		width: 100%;
+		width: 100% !important;
 	}
 	.cta-content h2 {
 		font-size: 25px;
+	}
+	.cta-btns{
+		flex-direction: column;
 	}
 	.cta-key-items {
 		flex-direction: column;

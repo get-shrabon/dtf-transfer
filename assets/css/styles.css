@@ -443,10 +443,13 @@ p {
 /* **************** Key Benefit CSS Start **************** */
 
 .key-benefits {
+	background-color: #f6f7f9;
+}
+.benefits {
 	margin-top: 50px;
 }
 .key-box {
-	background-color: #f6f7f9;
+	background-color: var(--white-color);
 	border-radius: 15px;
 	padding: 40px;
 }
@@ -461,10 +464,17 @@ p {
 	justify-content: center;
 	margin-bottom: 20px;
 }
+.key-box .icon i{
+	transition: all 0.6s ease;
+}
 .key-box:hover .icon {
 	background-color: var(--primary-color);
 	color: var(--white-color);
 }
+.key-box:hover .icon i {
+	transform: rotate(360deg) !important;
+}
+
 .key-box h3 {
 	font-size: 25px;
 	font-weight: 600;
@@ -495,11 +505,23 @@ p {
 	background-color: #f6f7f9;
 	border-radius: 16px;
 	border: 1px solid var(--primary-bg-color);
+	overflow: hidden;
+}
+.process-img {
+	overflow: hidden;
+	width: 100%;
+	height: 350px;
 }
 .process-img img {
 	width: 100%;
+	height: 100%;
 	border-top-left-radius: 16px;
 	border-top-right-radius: 16px;
+	transition: all 0.3s ease;
+	object-fit: cover;
+}
+.process-box:hover .process-img img {
+	transform: scale(1.1);
 }
 .process-content {
 	padding: 40px 20px;
@@ -511,7 +533,7 @@ p {
 	margin-top: -5px;
 }
 .process-content h3 {
-	font-size: 20px;
+	font-size: 30px;
 	font-weight: 600;
 	margin-bottom: 10px;
 }
@@ -652,13 +674,25 @@ p {
 	background-color: #f6f7f9;
 }
 .apply-box h3 {
-	font-size: 20px;
+	font-size: 30px;
 	font-weight: 600;
 	margin-bottom: 15px;
 }
-.apply-box img {
+.apply-box .demo-img {
+	overflow: hidden;
 	border: 2px dashed var(--primary-bg-color);
 	border-radius: 15px;
+	height: 350px;
+}
+.apply-box img {
+	border-radius: 12px;
+	width: 100%;
+	height: 100%;
+	transition: all 0.3s ease;
+	object-fit: cover;
+}
+.apply-box img:hover {
+	transform: scale(1.05);
 }
 
 /* **************** Before After Apply CSS End **************** */
@@ -905,15 +939,15 @@ p {
 
 /* **************** CTA CSS Start **************** */
 .cta {
-	/* background-color: var(--primary-bg-color); */
 	background-color: black;
 	border-radius: 30px;
 	color: var(--white-color);
 	margin-bottom: 80px;
 	text-align: center;
+	padding: 80px !important;
 }
 .cta-content {
-	width: 50%;
+	width: 70%;
 	margin: auto;
 }
 .cta-content h2 {
