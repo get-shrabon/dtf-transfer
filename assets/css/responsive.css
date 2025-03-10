@@ -87,6 +87,17 @@
 	.step-boxes {
 		padding: 0 50px;
 	}
+	/* Key Info CSS */
+	.key-info{
+		padding-top: 50px;
+	}
+	.key-info-content h2{
+		font-size: 30px;
+		line-height: 35px;
+	}
+	.key-info-content h4{
+		font-size: 16px;
+	}
 	/* FAQ CSS */
 	.faq-question {
 		font-size: 16px;

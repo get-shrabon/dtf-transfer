@@ -464,7 +464,7 @@ p {
 	justify-content: center;
 	margin-bottom: 20px;
 }
-.key-box .icon i{
+.key-box .icon i {
 	transition: all 0.6s ease;
 }
 .key-box:hover .icon {
@@ -697,6 +697,47 @@ p {
 
 /* **************** Before After Apply CSS End **************** */
 
+/* **************** Key Info CSS Start **************** */
+.key-info-boxes{
+	align-items: center;
+	gap: 30px;
+}
+.key-info-content h2 {
+	font-size: 50px;
+	font-weight: 600;
+	line-height: 55px;
+	margin-bottom: 15px;
+}
+.key-info-content h4 {
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+.key-info-content p {
+	font-size: 16px;
+	opacity: 0.9;
+}
+.key-info-content ul {
+	list-style: none;
+	margin: 20px 0 50px 0;
+}
+.key-info-content ul li {
+	font-size: 16px;
+	font-weight: 400;
+	font-family: inter;
+	margin-top: 8px;
+}
+.key-info-content ul li i {
+	color: var(--primary-bg-color);
+	margin-right: 6px;
+}
+.key-info-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 15px;
+}
+/* **************** Key Info CSS End **************** */
+
 /* **************** FAQ'S CSS Start **************** */
 .faq-container {
 	max-width: 900px;
@@ -715,7 +756,9 @@ p {
 }
 
 .faq-header h1 {
-	font-size: 36px;
+	font-size: 50px;
+	font-weight: 600;
+	line-height: 55px;
 	margin-bottom: 15px;
 }
 
