@@ -74,6 +74,12 @@
 	.section-header {
 		font-size: 16px;
 	}
+	.dtf-title-img{
+		width: 95%;
+	}
+	.process-img{
+		height: 450px;
+	}
 	/* Video CSS */
 	.video{
 		position: relative;

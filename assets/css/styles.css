@@ -15,10 +15,11 @@
 	scroll-behavior: smooth;
 }
 :root {
-	--primary-color: blue;
+	--primary-color: #0073e6;
 	--primary-bg-color: green;
-	--secondary-color: gray;
+	--secondary-color: #d9d9d9;
 	--white-color: #fff;
+	--true-color: #0073e6;
 }
 h1,
 h2,
@@ -312,6 +313,8 @@ p {
 .banner-left h1 {
 	font-size: 42px;
 	font-weight: 700;
+	color: var(--true-color);
+	text-shadow: 2px 2px 1px var(--secondary-color);
 }
 .banner-left p {
 	font-size: 18px;
@@ -334,7 +337,7 @@ p {
 	font-family: poppins;
 }
 .banner-key-items li i {
-	color: var(--primary-bg-color);
+	color: var(--primary-color);
 }
 .banner-btns {
 	display: flex;
@@ -437,6 +440,8 @@ p {
 }
 .product-img img {
 	width: 100%;
+	border-radius: 15px;
+	margin-top: 30px;
 }
 /* **************** Products CSS End **************** */
 
@@ -457,7 +462,7 @@ p {
 	width: 70px;
 	height: 70px;
 	border-radius: 50%;
-	background-color: var(--primary-bg-color);
+	background-color: var(--primary-color);
 	color: var(--white-color);
 	display: flex;
 	align-items: center;
@@ -467,10 +472,7 @@ p {
 .key-box .icon i {
 	transition: all 0.6s ease;
 }
-.key-box:hover .icon {
-	background-color: var(--primary-color);
-	color: var(--white-color);
-}
+
 .key-box:hover .icon i {
 	transform: rotate(360deg) !important;
 }
@@ -494,52 +496,79 @@ p {
 /* **************** Key Benefit CSS End **************** */
 
 /* **************** Process Guide CSS Start **************** */
-
+.process {
+	background-color: #f7f7f7;
+}
 .process-guide {
 	margin-top: 50px;
+	align-items: end !important;
 }
 .process-guide .three-col {
-	gap: 30px;
+	gap: 50px;
 }
 .process-box {
 	background-color: #f6f7f9;
-	border-radius: 16px;
-	border: 1px solid var(--primary-bg-color);
 	overflow: hidden;
 }
 .process-img {
 	overflow: hidden;
 	width: 100%;
-	height: 350px;
+	height: 550px;
+	background-image: linear-gradient(180deg, black, var(--primary-color));
+	padding: 20px;
+	border-radius: 50px;
+	margin-bottom: 50px;
 }
 .process-img img {
 	width: 100%;
 	height: 100%;
 	border-top-left-radius: 16px;
 	border-top-right-radius: 16px;
-	transition: all 0.3s ease;
 	object-fit: cover;
 }
-.process-box:hover .process-img img {
-	transform: scale(1.1);
-}
+
 .process-content {
-	padding: 40px 20px;
-	background-color: var(--primary-bg-color);
-	color: var(--white-color);
-	border-bottom-right-radius: 15px;
-	border-bottom-left-radius: 15px;
 	text-align: center;
-	margin-top: -5px;
 }
+
+.dtf-title-img {
+	width: 60%;
+	margin: 0 auto;
+}
+
+/* .dtf-title {
+	background: white;
+	background: linear-gradient(
+		to bottom,
+		#ffffff ,
+		#ffffff ,
+		#312df7 ,
+		#312df7 ,
+		#000000 ,
+		#535353 ,
+		#535353 
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-shadow: 5px rgb(255, 255, 255);
+	-webkit-text-stroke: 1px rgb(4, 4, 4);
+	font-weight: 900 !important;
+} */
 .process-content h3 {
-	font-size: 30px;
+	font-size: 25px;
 	font-weight: 600;
 	margin-bottom: 10px;
+	padding: 3px 20px;
+	width: fit-content;
+	margin: 0 auto;
+	border-radius: 999px;
+	background-image: linear-gradient(180deg, black, var(--primary-color));
+	color: white;
 }
 .process-content p {
-	font-size: 16px;
-	font-weight: 400;
+	font-size: 18px;
+	font-weight: 500;
+	margin-top: 20px;
 }
 
 /* **************** Process Guide CSS End **************** */
@@ -577,7 +606,7 @@ p {
 	z-index: 2;
 	text-align: center;
 	color: var(--white-color);
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: #0073e6c8;
 	padding: 20px;
 	border-radius: 15px;
 }
@@ -622,7 +651,7 @@ p {
 	position: absolute;
 	top: -10px;
 	left: -10px;
-	background-color: var(--primary-bg-color);
+	background-color: var(--primary-color);
 	color: var(--white-color);
 	width: 40px;
 	height: 40px;
@@ -680,7 +709,7 @@ p {
 }
 .apply-box .demo-img {
 	overflow: hidden;
-	border: 2px dashed var(--primary-bg-color);
+	border: 2px dashed var(--primary-color);
 	border-radius: 15px;
 	height: 350px;
 }
@@ -698,7 +727,7 @@ p {
 /* **************** Before After Apply CSS End **************** */
 
 /* **************** Key Info CSS Start **************** */
-.key-info-boxes{
+.key-info-boxes {
 	align-items: center;
 	gap: 30px;
 }
@@ -727,7 +756,7 @@ p {
 	margin-top: 8px;
 }
 .key-info-content ul li i {
-	color: var(--primary-bg-color);
+	color: var(--primary-color);
 	margin-right: 6px;
 }
 .key-info-img img {
@@ -749,7 +778,7 @@ p {
 }
 
 .faq-header {
-	background-color: var(--primary-bg-color);
+	background-color: var(--primary-color);
 	color: white;
 	padding: 30px;
 	text-align: center;
@@ -829,7 +858,7 @@ p {
 .toggle-icon::after {
 	content: "";
 	position: absolute;
-	background-color: var(--primary-bg-color);
+	background-color: var(--primary-color);
 	border-radius: 2px;
 }
 
@@ -930,12 +959,12 @@ p {
 	justify-content: center;
 	margin-right: 15px;
 	overflow: hidden;
-	border: 2px solid var(--primary-bg-color);
+	border: 2px solid var(--primary-color);
 }
 
 .customer-image i {
 	font-size: 28px;
-	color: #64748b;
+	color: var(--primary-color);
 }
 
 .customer-details {
@@ -945,7 +974,7 @@ p {
 .customer-name {
 	font-weight: 700;
 	font-size: 18px;
-	color: var(--primary-bg-color);
+	color: var(--primary-color);
 	margin-bottom: 3px;
 }
 
@@ -975,7 +1004,7 @@ p {
 }
 
 .swiper-pagination-bullet-active {
-	background-color: var(--primary-bg-color) !important;
+	background-color: var(--primary-color) !important;
 	opacity: 1;
 }
 /* **************** Testimonial CSS End **************** */
@@ -1037,7 +1066,7 @@ p {
 	font-family: poppins;
 }
 .cta-key-items li i {
-	color: var(--primary-bg-color);
+	color: var(--primary-color);
 }
 /* **************** CTA CSS End **************** */
 
