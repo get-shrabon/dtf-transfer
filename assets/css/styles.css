@@ -311,7 +311,8 @@ p {
 	z-index: 1;
 }
 .banner-left h1 {
-	font-size: 42px;
+	font-size: 45px;
+	line-height: 55px;
 	font-weight: 700;
 	color: var(--true-color);
 	text-shadow: 2px 2px 1px var(--secondary-color);
@@ -319,7 +320,7 @@ p {
 .banner-left p {
 	font-size: 18px;
 	font-weight: 500;
-	margin: 15px 0;
+	margin: 20px 0 15px 0;
 }
 .banner-key-items {
 	display: flex;
@@ -513,8 +514,8 @@ p {
 .process-img {
 	overflow: hidden;
 	width: 100%;
-	height: 550px;
-	background-image: linear-gradient(180deg, black, var(--primary-color));
+	height: 500px;
+	background-image: linear-gradient(180deg, black, #0000fd);
 	padding: 20px;
 	border-radius: 50px;
 	margin-bottom: 50px;
@@ -522,8 +523,7 @@ p {
 .process-img img {
 	width: 100%;
 	height: 100%;
-	border-top-left-radius: 16px;
-	border-top-right-radius: 16px;
+	border-radius: 30px;
 	object-fit: cover;
 }
 
@@ -562,7 +562,7 @@ p {
 	width: fit-content;
 	margin: 0 auto;
 	border-radius: 999px;
-	background-image: linear-gradient(180deg, black, var(--primary-color));
+	background-image: linear-gradient(180deg, black, #0000fd);
 	color: white;
 }
 .process-content p {
